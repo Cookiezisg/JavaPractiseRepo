@@ -4,8 +4,6 @@ public class Main {
         System.out.println("Hello, World!");
         System.out.println("I'm learning JAVA");
         
-        Helper helper = new Helper();
-        helper.help();
 
         System.out.print("Test this function");
         System.out.print("there should be no new line");
@@ -61,11 +59,41 @@ public class Main {
         System.out.println("Number of items: " + items);
         System.out.println("Cost per item: " + costPerItem + currency);
         System.out.println("Total cost = " + totalCost + currency);
-    }
-}
 
-class Helper {
-    public void help() {
-        System.out.println("Helping...");
+        System.out.println(items);
+        double double_items = items;
+        System.out.println(double_items);
+
+        int backToInt = (int) double_items;
+        System.out.println(backToInt);
+
+        int maxScore = 500;
+        int userScore = 432;
+        //float percentage = userScore / maxScore * 100;
+         float percentage = (float) userScore / maxScore * 100f;
+
+        System.out.println(percentage);
+
+        userScore += 5;
+        System.out.println(userScore);
+
+        System.out.println(userScore > maxScore);
+        System.out.println(x < 5 &&  x < 10);
+        System.out.println(true || true);
+
+        String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        System.out.println("The length of the txt string is: " + txt.length());
+
+
+        System.out.println(txt.toLowerCase());   // Outputs "HELLO WORLD"
+
+        txt = txt.toLowerCase();
+
+        System.out.println(txt);
+        System.out.println(txt.indexOf("b"));
+
+        System.out.println(dirmanagername.concat(othermanagername));
     }
+
+
 }
