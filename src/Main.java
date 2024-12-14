@@ -93,6 +93,43 @@ public class Main {
         System.out.println(txt.indexOf("b"));
 
         System.out.println(dirmanagername.concat(othermanagername));
+        int myAge = 25;
+        int votingAge = 18;
+
+        if (myAge >= votingAge) {
+        System.out.println("Old enough to vote!");
+        } else {
+        System.out.println("Not old enough to vote.");
+        }
+
+
+
+
+        String ifString = (myAge > 30) ? "My age is over 30" : "My age is below 30";
+        System.out.println(ifString);
+
+        int number = 2;
+
+        // Print the multiplication table for the number 2
+        for (int i = 1; i <= 10; i++) {
+        System.out.println(number + " x " + i + " = " + (number * i));
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        } 
+
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (int i = 0; i < cars.length; i++) {
+        System.out.println(cars[i]);
+
+
+        int a = 10;
+        if (a<1){
+            System.out.println(a);
+        }else if(a>4){
+            System.out.println(a+1000);
+        }else{
+            System.out.println(a+10);
+        }
+        }
     }
 
 
