@@ -79,7 +79,6 @@ public class Main {
 
         System.out.println(userScore > maxScore);
         System.out.println(x < 5 &&  x < 10);
-        System.out.println(true || true);
 
         String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         System.out.println("The length of the txt string is: " + txt.length());
@@ -108,18 +107,13 @@ public class Main {
         String ifString = (myAge > 30) ? "My age is over 30" : "My age is below 30";
         System.out.println(ifString);
 
-        int number = 2;
 
-        // Print the multiplication table for the number 2
-        for (int i = 1; i <= 10; i++) {
-        System.out.println(number + " x " + i + " = " + (number * i));
-        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
-        } 
+
 
         String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
         for (int i = 0; i < cars.length; i++) {
         System.out.println(cars[i]);
-
+        }
 
         int a = 10;
         if (a<1){
@@ -129,8 +123,77 @@ public class Main {
         }else{
             System.out.println(a+10);
         }
+
+        System.out.println(a);
+
+        int b = (a > 10)? 20 : 30+a;
+        System.out.println(b);
+
+        switch (b) {
+            case 30:
+                System.out.println("28332");
+                break;
+            case 20:
+                System.out.println("2002020");
+                break;
+            default:
+                break;
         }
+
+        while (b<=100) {
+            System.out.println(b);
+            b++;
+        }
+        
+        b = 1;
+        do{
+            System.out.println(b);
+            b++;
+        }
+        while (b<=100);
+
+        b = 1;
+        a = 1;
+
+        System.out.println(a);
+        System.out.println(b);
+
+        for (int i=1;i<10;i++){
+            System.out.println(i);
+        }
+
+        // Outer loop
+        for (int i = 1; i <= 2; i++) {
+            System.out.println("Outer: " + i); // Executes 2 times
+            
+            // Inner loop
+            for (int j = 1; j <= 3; j++) {
+            System.out.println(" Inner: " + j); // Executes 6 times (2 * 3)
+            }
+        } 
+
+        String[] i = {"lyq","lzh","zzj","ljl","cyh","gyt","ljl"};
+        for(String j: i){
+            System.out.println(j);
+        }
+
+        System.out.println(i[0]);
+
+        for(int j=0; j < i.length; j++){
+            System.out.println(j);
+        }
+
+        for(String j : i){
+            System.out.println(j);
+        }
+        
+        int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+        for(int[] row : myNumbers){
+            for(int j: row){
+                System.out.print(j+" ");
+            }
+            System.out.print("\n");
+        }
+
     }
-
-
 }
