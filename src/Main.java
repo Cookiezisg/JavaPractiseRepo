@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import mypack.MyPackage;
 public class Main {
 
     static void staticVoidMethod(){
@@ -10,7 +11,8 @@ public class Main {
         Class classClass = new Class(10);
         System.out.println(classClass.x);
 
+        MyPackage myPackageObject = new MyPackage();
+        myPackageObject.yeild();
 
-        
     }
 }
