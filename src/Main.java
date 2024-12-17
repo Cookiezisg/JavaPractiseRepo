@@ -1,18 +1,14 @@
-import java.util.Scanner;
-import mypack.MyPackage;
-public class Main {
-
-    static void staticVoidMethod(){
-        System.out.println("this is static void method");
+class OuterClass {
+    int x = 10;
+  
+    static class InnerClass {
+      int y = 5;
     }
-
-    public static void main(String[] args){
-        System.out.println("This is the main method");
-        Class classClass = new Class(10);
-        System.out.println(classClass.x);
-
-        MyPackage myPackageObject = new MyPackage();
-        myPackageObject.yeild();
-
+  }
+  
+  public class Main {
+    public static void main(String[] args) {
+      OuterClass.InnerClass myInner = new OuterClass.InnerClass();
+      System.out.println(myInner.y);
     }
-}
+  }
