@@ -132,6 +132,7 @@ public class Main {
     HashMap<String,String> myHashMap = new HashMap<String,String>();
     myHashMap.put("swl", "lyq");
     myHashMap.put("lzh", "ppu");
+    myHashMap.put("lmo", "zly");
     System.out.println(myHashMap);
 
     System.out.println(' ');
@@ -139,5 +140,9 @@ public class Main {
 
     System.out.println(myHashMap.get("lzh"));
     System.out.println(myHashMap.size());
+
+    for(String i: myHashMap.values()){
+      System.out.println(i);
+    }
   }
 }
