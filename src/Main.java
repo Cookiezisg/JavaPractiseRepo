@@ -117,23 +117,27 @@ public class Main {
       System.out.println(i);
     }
 
-    ArrayList<Integer> myList = new ArrayList<Integer>();
-    for(int i: numbers){
-      myList.add(0,i);
-    }
-    System.out.print(myList);
 
-    System.out.println(myList.get(1));
-
-    for(int i=0;i <myList.size();i++){
-      System.out.println(myList.get(i));
-    }
-
-    for(int i: myList){
+    ArrayList<String> myList = new ArrayList<String>();
+    myList.add("whta");
+    myList.add("shabi");
+    myList.add(0,"shabishabi");
+    for(String i: myList){
       System.out.println(i);
     }
 
-    Collections.sort(myList);
-    System.out.println(myList);
+    System.out.println(myList.get(0));
+    myList.get(0);
+
+    HashMap<String,String> myHashMap = new HashMap<String,String>();
+    myHashMap.put("swl", "lyq");
+    myHashMap.put("lzh", "ppu");
+    System.out.println(myHashMap);
+
+    System.out.println(' ');
+    System.out.println(' ');
+
+    System.out.println(myHashMap.get("lzh"));
+    System.out.println(myHashMap.size());
   }
 }
